@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSA.TECH.HUB</title>
+    <div>
+        <link rel="stylesheet" href="home1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script type="module" src="firebaseauth.js"></script>
+    </div>
+</head>
+<body>
+    
+    <div style="background-color: rgb(10, 10, 10);">
+        <div class="navbar">
+            <h1 class="head" >KSA.TECH.HUB</h1>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+         <div class="navbar-links">
+            <ul>
+                <li> <a href="home1.html">Home </a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="service.html">Service</a></li>
+                <!-- <li> <a href="">Portfolio</a></li> -->
+                <li> <a href="work with us.html">WorkWithUs</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+     <div class="form" >
+        <div class="login">
+         <span>Dont have account? <a href="register1.html" onclick="Sign()">Sign In.</a></span>
+         <header>Login In Here</header>
+        </div>
+        <div>
+          <form class=" login-form" method="post" name="form" onsubmit="return validated()">
+           <div class="input">
+             <input  autocomplete="off" class="input-field" placeholder="Email or UserName">
+             <!-- <div id="email_error">Please fill up your Email or Phone</div> -->
+           </div>
+           <div class="input">
+               <input  type="text" class="input-field" placeholder="Password">
+                <!-- <div id="pass_error" >Please fill up your password</div> -->
+              </div>
+            </div>
+           <div class="input">
+            <button class="button-c">Login</button>
+           </div>
+           <div class="input">
+             <label ><a href="">Forgot password ??</a></label>
+           </div>
+          </form>
+        </div>
+     </div>
+     <footer class="footer">
+      <div class="footercontainer">
+          <div class="socailIcons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-google-plus"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+  
+          </div>
+          <div class="footerNav">
+              <ul>
+                  <li><a href="home1.html">Home</a></li>
+                  <li><a href="contact.html">contact Us</a></li>
+                  <li><a href="service.html">Services</a></li>
+                  <li><a href="work with us.html">Work With Us</a></li>
+              </ul>
+          </div>
+         
+      </div>
+      <div class="footerBotton">
+          <p>copyright &copy;2024; Designed by <span class="designer">Elf Vallin</span></p>
+      </div>
+     </footer>
+  
+
+          
+
+      <script src="js.js"></script>
+      <!-- <script>
+        var email = document.form['form']['email'];
+        var password = document.form['form']['password'];
+
+        var email_error = document.getElementById('email_error')
+        var pass_error = document.getElementById('pass_error')
+
+email.addEventListener('textInput',email-Verify);
+password.addEventListener('textInput',password-Verify);
+
+
+        function validated(){
+          if (email.value.length < 9) {
+            email.style.border = "1px solid red";
+            email_error.stlye.display ="block";
+            email.focus();
+            return  false;
+          }
+          if (password.value.length < 6) {
+            password.style.border = "1px solid red";
+            pass_error.stlye.display ="block";
+            password.focus();
+            return  false;
+          }
+        }
+
+        function email_Verify(){
+        if (email.value.length < 8) {
+            email.style.border = "1px solid silver";
+            email_error.stlye.display ="none";
+            return  true;
+        }
+      }
+      
+      function pass_Verify(){
+        if (password.value.length < 8) {
+            password.style.border = "1px solid silver";
+            pass_error.stlye.display ="none";
+            return  true;
+        }
+      }
+ 
+      </script> -->
+</body>
+ </html>

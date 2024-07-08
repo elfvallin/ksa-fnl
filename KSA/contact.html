@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSA.TECH.HUB</title>
+    <div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="home1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        
+    </div>
+</head>
+<body>
+    
+    <div style="background-color: black;">
+        <div class="navbar">
+            <h1 class="head" >KSA.TECH.HUB</h1>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+         <div class="navbar-links">
+            <ul>
+                <li> <a href="home1.html">Home </a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="service.html">Service</a></li>
+                <!-- <li> <a href="">Portfolio</a></li> -->
+                <li> <a href="work with us.html">WorkWithUs</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+   
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="container-wrapper">
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <!-- <p id="result">head</p> -->
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea  name="message" placeholder="Your Message"></textarea>
+                        </div>
+                        <button class="button-c" type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone"></i>+256 xxx xxx xxx</p>
+                    <p><i class="fas fa-envelope"></i>info@exmple.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i>123 Street,City,Country</p>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <footer class="footer">
+        <div class="footercontainer">
+            <div class="socailIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+    
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="home1.html">Home</a></li>
+                    <li><a href="contact.html">contact Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="work with us.html">Work With Us</a></li>
+                </ul>
+            </div>
+           
+        </div>
+        <div class="footerBotton">
+            <p>copyright &copy;2024; Designed by <span class="designer">Elf Vallin</span></p>
+        </div>
+       </footer>
+    
+    <!-- /////////java///// -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+ 
+       <script>
+        function sendEmail(){
+              Email.send({
+        Host : "smtp.gmail.com",
+        Username : "boyjam005@gmail.com",
+        Password : "he11we11",
+        To : 'boyjam005@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Email Form Enquiry",
+         Body : "Name: " + document.getElementById("name").value
+         +"<br>Email: " +document.getElementById("email").value
+         +"<br>Message: " +document.getElementById("message").value
+
+     }).then(
+        message => alert("Message Sent Succesfully")
+     );
+        }
+    </script>
+             <script src="js.js"></script>
+   
+    
+       <!-- <script>
+        function validation(){
+            if(document.formfill.name.value==""){
+                document.getElementById("result").innerHTML="Enter Your name ";
+                return false;
+            }
+            else if(document.formfill.Yourname.value.length<6){
+                document.getElementById("result").innerHTML="Atleast six letters"
+            }
+            else if(document.formfill.Email.value==""){
+                document.getElementById("result").innerHTML="Enter your email"
+            }
+
+        }
+       </script> -->
+</body>
+</html>

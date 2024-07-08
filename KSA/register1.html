@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSA.TECH.HUB</title>
+    <div>
+        <link rel="stylesheet" href="home1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script type="module" src="firebaseauth.js"></script>
+
+    </div>
+</head>
+<body>
+    
+    <div style="background-color: rgb(10, 10, 10);">
+        <div class="navbar">
+            <h1 class="head" >KSA.TECH.HUB</h1>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+         <div class="navbar-links">
+            <ul>
+                <li> <a href="home1.html">Home </a></li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="service.html">Service</a></li>
+                <!-- <li> <a href="">Portfolio</a></li> -->
+                <li> <a href="work with us.html">WorkWithUs</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    <!-- /////////sign in form -->
+    <div class="form">
+      <div id="singUpMessage" class="messagediv" style="display: none;"></div>
+        <div class="login">
+            <span>Have an account? <a href="login.html" onclick="login()">Login</a></span>
+            <header>Sign up</header>
+        </div>
+        <form onsubmit="sendEmail(); resest();return false">
+        <div class="input">
+            <input type="text" class="input-field" id="fname" placeholder="Firstname">
+           
+        </div>
+        <div class="input">
+            <input type="text" class="input-field" id="lname" placeholder="Lastname">
+           
+        </div>
+        <div class="input"> 
+            <input type="text" class="input-field" id="email" placeholder="Email">
+       
+       </div class="input">
+       <div>
+        <input type="text" class="input-field" id="passWord" placeholder="PassWord">
+       
+      </div >
+      <div class="input">
+       <button class="button-c" id="submitSignUp">Sign Up</button>
+      </div>
+    </form>
+      <div class="input">
+        <input type="checkbox" id="register-check">
+        <label for="register-check">Remember Me</label>
+      </div>
+      <div class="input">
+        <label ><a href="">Terms & Conditions</a></label>
+      </div>
+    
+  
+
+      
+    </div>
+    <footer class="footer">
+      <div class="footercontainer">
+          <div class="socailIcons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-google-plus"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+  
+          </div>
+          <div class="footerNav">
+              <ul>
+                  <li><a href="home1.html">Home</a></li>
+                  <li><a href="contact.html">contact Us</a></li>
+                  <li><a href="service.html">Services</a></li>
+                  <li><a href="work with us.html">Work With Us</a></li>
+              </ul>
+          </div>
+         
+      </div>
+      <div class="footerBotton">
+          <p>copyright &copy;2024; Designed by <span class="designer">Elf Vallin</span></p>
+      </div>
+     </footer>
+  
+    <script src="js.js"></script>
+    <script src="firebaseauth.js"></script>
+ 
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <!-- <script>
+        function Register(){
+              Email.send({
+        Host : "smtp.gmail.com",
+        Username : "boyjam005@gmail.com",
+        Password : "he11we11",
+        To : 'boyjam005@gmail.com',
+        From : document.getElementById("Email").value,
+        Subject : "New Contact Form Enquiry",
+         Body : "Firstname: " + document.getElementById("Firstname").value
+         +"Lastname: " +document.getElementById("Lastname").value
+         +"Email: " +document.getElementById("Email").value
+
+     }).then(
+        message => alert("Succesfully Registered")
+     );
+     var message=("Enter valid content")
+          if(document.formfill.Yourname.value.length<4){
+             alert(message?: any):void
+          }
+        }
+        
+    </script> -->
+
+
+</body>
+</html>
